@@ -1,0 +1,6 @@
+packages/
+.vscode/
+.vs/
+EZGPS/bin/
+EZGPS/obj/
+EZGPS/properties/
