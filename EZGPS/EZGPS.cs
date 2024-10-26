@@ -1158,7 +1158,7 @@ namespace EZGPS
                 String cleanedWord = Regex.Escape(word);
                 try
                 {
-                    doesContain &= Regex.IsMatch(g.Name, "(?:^|[\\s_])" + cleanedWord + "(?:\\b|_)", RegexOptions.IgnoreCase) && cleanedWord.Length > 0;
+                    doesContain &= Regex.IsMatch(g.Name, @"(?:^|[\s_])" + cleanedWord + @"(?:\b|_)", RegexOptions.IgnoreCase) && cleanedWord.Length > 0;
                 }
                 catch(ArgumentNullException e)
                 {
